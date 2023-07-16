@@ -114,11 +114,11 @@ function startSearch() {
   const jobTitle = document.querySelector("#title").value
   const jobLocation= document.querySelector("#location").value
 
-  const data = searchJobs(jobTitle, jobLocation);
+  const wantedjobs = searchJobs(jobTitle, jobLocation);
 
   const jobList = document.querySelector("#searchdisplay");
 
-  for (const result of data.result ) {
+  for (const result of wantedjobs.result ) {
     const li = document.createElement('li')
 
     li.innerHTML = "<div><p>" + result.title + "</p> <p>" + result.location + "</p></div>"
