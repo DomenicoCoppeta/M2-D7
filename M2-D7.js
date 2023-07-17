@@ -118,6 +118,11 @@ function startSearch() {
 
   const jobList = document.querySelector("#searchdisplay");
 
+  function empty (element){
+    element.innerHTML ='';
+  }
+  empty(jobList)
+
   for (const result of wantedjobs.result ) {
     const li = document.createElement('li')
 
